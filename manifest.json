@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Timeblock Timer",
+    "version": "1.0.0",
+    "description": "A focus timer with rewards to help you stay productive",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "icons/icons-focus.png",
+        "48": "icons/icons-coffee.png",
+        "128": "icons/icons-meal.png"
+      }
+    },
+    "permissions": ["storage", "notifications", "alarms"],
+    "background": {
+      "service_worker": "src/background.js",
+      "type": "module"
+    },
+    "icons": {
+       "16": "icons/icons-focus.png",
+        "48": "icons/icons-coffee.png",
+        "128": "icons/icons-meal.png"
+    }
+  }
+  
